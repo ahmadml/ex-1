@@ -26,6 +26,7 @@ return str;
 			||(text[i]=='y' && word[0]=='i') || (text[i]=='b' && (word[0]=='f' || word[0]=='p'))||(text[i]=='f' && (word[0]=='b'||word[0]=='p')) 
 			|| (text[i]=='p' && (word[0]=='b'||word[0]=='f')) || (text[i]=='c' && (word[0]=='k' || word[0]=='q'))||(text[i]=='k' && (word[0]=='c'||word[0]=='q')) 
 			|| (text[i]=='q' && (word[0]=='c'||word[0]=='k'))){
+				flag=1;
 				for(int j=1;j<word.length();j++){
 					if(text[i+j]==word[j] || (text[i+j]=='v' && word[j]=='w')||(text[i+j]=='w' && word[j]=='v') || (text[i+j]=='g' && word[j]=='j')
 					||(text[i+j]=='j' && word[j]=='g') || (text[i+j]=='s' && word[j]=='z')||(text[i+j]=='z' && word[j]=='s') || (text[i+j]=='d' && word[j]=='t')
