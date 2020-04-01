@@ -41,7 +41,7 @@ return str;
 				}
 			}
 			if(flag==1 && (text[i+word.length()]==' ' || text[i+word.length()]=='\0')) return text1.substr(i,word.length());
-			else throw std::out_of_range{"Did not find the word " + word1 + " in the text"};
+			//else throw std::out_of_range{"Did not find the word " + word1 + " in the text"};
 		}
 	}
 	if(flag==0)
