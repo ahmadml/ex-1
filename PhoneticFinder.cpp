@@ -14,7 +14,7 @@ for (int i = 0; i<text.length();i++){
 return str;
 }
 	std::string find(std::string text1, std::string word1) {
-		if(word1.length()==0) 
+		if(word1.length()== 0 || word1==" ") 
 		throw std::out_of_range{"the word is empty"};
 		std::string text = cast(text1);
 		std::string word = cast(word1);
